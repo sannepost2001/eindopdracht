@@ -50,7 +50,6 @@ def zoeken():
             '</body>\n'
             '</html>')
 
-kltr
 if __name__ == '__main__':
     app.run()
 
