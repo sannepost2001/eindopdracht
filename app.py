@@ -1,10 +1,11 @@
 import mysql.connector
-from flask import Flask, request
+from flask import Flask, request, render_template
 
 app = Flask(__name__)
 
 @app.route('/')
-
+def home():
+    return render_template('home.html')
 
 @app.route('/')
 def hello_world():
@@ -12,7 +13,7 @@ def hello_world():
             '<html lang="en">\n'
             '<head>\n'
             '    <meta charset="UTF-8">\n'
-            '    <title>eind</title>\n'
+            '    <title>eindopdracht</title>\n'
             '</head>\n'
             '<body>\n'
             '<form method = "POST">Zoekwoord:\n'
