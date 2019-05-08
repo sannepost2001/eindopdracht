@@ -3,7 +3,7 @@ from flask import Flask, request
 
 app = Flask(__name__)
 
-@app.route('/')
+#@app.route('/')
 
 
 @app.route('/')
@@ -20,6 +20,8 @@ def hello_world():
             '    <input type ="submit" value="Submit"></form>\n'
             '</body>\n'
             '</html>')
+
+
 @app.route('/', methods=['POST'])
 def zoeken():
     conn = mysql.connector.connect(host="", user="", db="")
